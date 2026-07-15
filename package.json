@@ -1,0 +1,51 @@
+{
+    "name": "@blacnova/dep-insight",
+    "version": "1.0.1",
+    "description": "Interactive dependency visualization and impact analysis for JavaScript projects",
+    "main": "./lib/index.js",
+    "exports": {
+        ".": {
+            "types": "./lib/index.d.ts",
+            "import": "./lib/index.mjs",
+            "require": "./lib/index.js",
+            "default": "./lib/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "types": "./lib/index.d.ts",
+    "scripts": {
+        "test": "node ./scripts/test.mjs",
+        "link": "sf link ./ -f",
+        "build": "node ./scripts/build.mjs",
+        "patch": "npm run test && npm run build && sf publish patch -r"
+    },
+    "files": [
+        "lib"
+    ],
+    "keywords": [
+        "dependency",
+        "graph",
+        "visualization",
+        "impact-analysis",
+        "circular-dependency",
+        "dependency-health"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nicholasxdavis/dep-insight.git"
+    },
+    "bugs": {
+        "url": "https://github.com/nicholasxdavis/dep-insight/issues"
+    },
+    "homepage": "https://github.com/nicholasxdavis/dep-insight#readme",
+    "dependencies": {
+        "acorn": "^8.16.0",
+        "console-grid": "^2.2.4",
+        "eight-colors": "^1.3.3"
+    },
+    "devDependencies": {
+        "eslint": "^10.2.0",
+        "eslint-config-plus": "^2.0.4"
+    }
+}
