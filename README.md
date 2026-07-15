@@ -5,7 +5,7 @@
 
 > Interactive dependency visualization and impact analysis for JavaScript projects.
 
-<img width="720" height="400" alt="Screenshot 2026-07-14 201755" src="https://github.com/user-attachments/assets/13236f45-bfab-4c8f-935d-de8456d18c59" />
+<img width="750" height="390" alt="Screenshot 2026-07-14 201755" src="https://github.com/user-attachments/assets/13236f45-bfab-4c8f-935d-de8456d18c59" />
 
 ## Features
 * Build dependency graphs from package.json and ES6 imports
